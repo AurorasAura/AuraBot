@@ -18,7 +18,7 @@ from sopel.module import commands, rule, example, priority
 
 @rule('$nick' '(?i)(help|doc) +([A-Za-z]+)(?:\?+)?$')
 @example('.help uptime')
-@commands('help', 'commands', 'cmds')
+@commands('help', 'commands', 'cmds', 'cmdsall')
 @priority('high')
 def help(bot, trigger):
     """Shows a command's documentation, and possibly an example."""
